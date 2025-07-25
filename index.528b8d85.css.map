@@ -1,0 +1,1 @@
+{"mappings":"AEAA","sources":["index.528b8d85.css","src/sass/index.scss","src/sass/components/_header.scss"],"sourcesContent":["h1 {\n  color: red;\n}\n\n/*# sourceMappingURL=index.528b8d85.css.map */\n","@use './components/header' as *;","h1 {\n    color: red;\n}"],"names":[],"version":3,"file":"index.528b8d85.css.map"}

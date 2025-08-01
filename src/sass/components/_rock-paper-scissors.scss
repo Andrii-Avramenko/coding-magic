@@ -1,0 +1,11 @@
+.rps-choice {
+    padding: 20px;
+    background-color: #000;
+    border-radius: 20px;
+    border: none
+}
+
+.rps-choice.rps-chosen {
+    background-color: #424242;
+    fill: #424242;
+}

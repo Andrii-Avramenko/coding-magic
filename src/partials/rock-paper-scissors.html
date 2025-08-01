@@ -3,9 +3,21 @@
     <h2 class="section-title">Камінь - ножиці - папір</h2>
     <div class="rps-game">
       <div class="rps-choices">
-        <button type="button" class="rps-choice rock"></button>
-        <button type="button" class="rps-choice scissors"></button>
-        <button type="button" class="rps-choice paper"></button>
+        <button type="button" class="rps-choice" data-rpsItem="rock">
+          <svg width="40" height="40" stroke="white">
+            <use href="./images/symbol-defs.svg#icon-rock"></use>
+          </svg>
+        </button>
+        <button type="button" class="rps-choice" data-rpsItem="scissors">
+          <svg width="40" height="40" stroke="white">
+            <use href="./images/symbol-defs.svg#icon-scissors"></use>
+          </svg>
+        </button>
+        <button type="button" class="rps-choice" data-rpsItem="paper">
+          <svg width="40" height="40" stroke="white">
+            <use href="./images/symbol-defs.svg#icon-paper"></use>
+          </svg>
+        </button>
       </div>
       <p>
         <span id="rps-result">Оберіть варіант вище</span

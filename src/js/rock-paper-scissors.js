@@ -4,6 +4,7 @@ const rpsScore = {
   userScore: 0,
 };
 const compChoices = ['rock', 'scissors', 'paper'];
+const resetButton = querySelector('.rps-reset')
 let gameResult = document.querySelector('.rps-result')
 const playButton = document.querySelector('.rps-comp-choice')
 
@@ -48,4 +49,11 @@ function startGame() {
     gameResult.textContent = 'Комп\'ютер переміг';
   }
   console.log('Гра закінчена')
+}
+
+resetButton.addEventListener('click', resetCounter)
+
+function resetCounter() {
+  rpsScore.compScore = 0; rpsScore.userScore = 0
+  return
 }

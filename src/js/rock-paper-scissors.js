@@ -10,9 +10,9 @@ const resetButton = document.querySelector('#rps-reset');
 const rpsCompCounter = document.querySelector('#rps-comp-count')
 const rpsUserCounter = document.querySelector('#rps-user-count')
 
-if (userName == false) {
-  document.querySelector('#rps-user-name').textContent = userName
-}
+// if (userName == false) {
+//   document.querySelector('#rps-user-name').textContent = userName
+// }
 
 rpsButtons.forEach(btn => {
   btn.addEventListener('click', () => {

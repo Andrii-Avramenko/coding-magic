@@ -1,12 +1,18 @@
 const rpsButtons = document.querySelectorAll('.rps-choice');
+const compChoices = ['rock', 'scissors', 'paper'];
+const gameResult = document.querySelector('#rps-result');
+const playButton = document.querySelector('#rps-comp-choice');
 const rpsScore = {
   compScore: 0,
   userScore: 0,
 };
-const compChoices = ['rock', 'scissors', 'paper'];
-const resetButton = querySelector('.rps-reset')
-let gameResult = document.querySelector('.rps-result')
-const playButton = document.querySelector('.rps-comp-choice')
+const resetButton = document.querySelector('#rps-reset');
+const rpsCompCounter = document.querySelector('#rps-comp-count')
+const rpsUserCounter = document.querySelector('#rps-user-count')
+
+if (userName == false) {
+  document.querySelector('#rps-user-name').textContent = userName
+}
 
 rpsButtons.forEach(btn => {
   btn.addEventListener('click', () => {
@@ -22,38 +28,43 @@ rpsButtons.forEach(btn => {
 playButton.addEventListener('click', startGame);
 
 function startGame() {
-  console.log('Початок гри')
-  const chosenObject = document.querySelector('.rps-chosen').dataset.rpsitem;
+  gameResult.style.color = '#000000ff';
+  const chosenElement = document.querySelector('.rps-chosen');
+  if (chosenElement === null) {
+    gameResult.style.color = '#e88000ff';
+    return;
+  }
+
+  const chosenObject = chosenElement.dataset.rpsitem;
   const compChoice =
     compChoices[Math.floor(Math.random() * compChoices.length)];
-    
-  console.log('Змінні працюють')
-  if (!chosenObject) {
-    gameResult.style.color = "#ffb300ff"
-  }
+  playButton.textContent = compChoice
 
-  console.log('Перевірено чи є варіант')
   if (chosenObject === compChoice) {
     gameResult.textContent = 'Нічія!';
-  } else if (chosenObject == 'rock' && compChoice == 'scissors') {
+    gameResult.style.color = '#e88000ff';
+  } else if (
+    (chosenObject === 'rock' && compChoice === 'scissors') ||
+    (chosenObject === 'paper' && compChoice === 'rock') ||
+    (chosenObject === 'scissors' && compChoice === 'paper')
+  ) {
     gameResult.textContent = 'Ви перемогли!';
-  } else if (chosenObject == 'paper' && compChoice == 'rock') {
-    gameResult.textContent = 'Ви перемогли!';
-  } else if (chosenObject == 'scissors' && compChoice == 'paper') {
-    gameResult.textContent = 'Ви перемогли!';
-  } else if (chosenObject == 'paper' && compChoice == 'scissors') {
-    gameResult.textContent = 'Комп\'ютер переміг!';
-  } else if (chosenObject == 'scissors' && compChoice == 'rock') {
-    gameResult.textContent = 'Комп\'ютер переміг';
-  } else if (chosenObject == 'rock' && compChoice == 'paper') {
-    gameResult.textContent = 'Комп\'ютер переміг';
+    rpsScore.userScore += 1;
+    rpsUserCounter.textContent = rpsScore.userScore
+    gameResult.style.color = '#47d524ff';
+  } else {
+    gameResult.textContent = "Комп'ютер переміг!";
+    rpsScore.compScore += 1;
+    rpsCompCounter.textContent = rpsScore.compScore
+    gameResult.style.color = '#f30707ff';
   }
-  console.log('Гра закінчена')
 }
 
-resetButton.addEventListener('click', resetCounter)
+resetButton.addEventListener('click', resetCounter);
 
 function resetCounter() {
-  rpsScore.compScore = 0; rpsScore.userScore = 0
-  return
+  rpsScore.compScore = 0;
+  rpsScore.userScore = 0;
+  document.querySelector('#rps-user-count').textContent = rpsScore.userScore;
+  document.querySelector('#rps-comp-count').textContent = rpsScore.compScore;
 }

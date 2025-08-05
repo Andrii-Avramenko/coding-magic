@@ -1,6 +1,27 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 body {
-  min-height: 100vh;
+  font-weight: 400;
   line-height: 1.5;
+  font-size: 12px;
+  color: #000;
   font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.container {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+  // outline: dotted red;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    max-width: 668px;
+
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: none;
+    width: 1110px;
+  }
 }

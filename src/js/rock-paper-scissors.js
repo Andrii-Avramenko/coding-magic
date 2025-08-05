@@ -114,4 +114,7 @@ function rpsResetCounter() {
   rpsScore.userScore = 0;
   document.querySelector('#rps-user-count').textContent = rpsScore.userScore;
   document.querySelector('#rps-comp-count').textContent = rpsScore.compScore;
+  gameResult.textContent = 'Оберіть варіант вище'
+  quickAnswerHolder.textContent = ''
+  gameResult.style.color = '#000000ff';
 }

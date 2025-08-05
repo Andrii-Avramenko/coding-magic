@@ -1,2 +1,0 @@
-const t=document.getElementById("birthYear"),e=document.getElementById("result");document.getElementById("yearForm").addEventListener("submit",(function(n){n.preventDefault();const o=parseInt(t.value);e.style.color="",e.style.fontWeight="",isNaN(o)||(o%4==0&&o%100!=0||o%400==0?(e.textContent="Ви народилися у високосний рік!",e.style.color="green",e.style.fontWeight="bold"):(e.textContent="Це не високосний рік.",e.style.color="red",e.style.fontWeight="bold"))}));
-//# sourceMappingURL=index.3de2e132.js.map

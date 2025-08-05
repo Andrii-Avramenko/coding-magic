@@ -1,2 +1,0 @@
-!function(){var e=document.getElementById("birthYear"),t=document.getElementById("result");document.getElementById("yearForm").addEventListener("submit",(function(n){n.preventDefault();var o=parseInt(e.value);t.style.color="",t.style.fontWeight="",isNaN(o)||(o%4==0&&o%100!=0||o%400==0?(t.textContent="Ви народилися у високосний рік!",t.style.color="green",t.style.fontWeight="bold"):(t.textContent="Це не високосний рік.",t.style.color="red",t.style.fontWeight="bold"))}))}();
-//# sourceMappingURL=index.5f296703.js.map

@@ -1,1 +1,6 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: 'Montserrat Alternates', sans-serif;
+}

@@ -1,0 +1,24 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="btn-close-modal" type="button" data-modal-close></button>
+    <p class="modal-text">Привіт!</p>
+    <p class="modal-text">
+      Ви потрапили на сайт інтерактивних ігор та завдань. Сподіваємося, що вам
+      сподобається та ви отримаєте позитивні емоції! Бажаємо вам гарно провести
+      час!
+    </p>
+    <form action="" id="modal-form">
+      <label for="name-input" class="modal-text">Введіть своє ім'я</label>
+      <input
+        type="text"
+        name="name-input"
+        id="modal-name"
+        placeholder="Ваше ім'я..."
+        pattern="^(?=.*[A-Za-z\u0400-\u04FF])[A-Za-z\u0400-\u04FF' \-]+$"
+        title="Вводьте лише літери та пробіли (Строка немає бути пустою)"
+        required
+      />
+      <button type="submit" id="modal-save">Зберегти</button>
+    </form>
+  </div>
+</div>

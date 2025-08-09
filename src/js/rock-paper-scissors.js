@@ -17,9 +17,9 @@ const quickAnswers = {
 }
 let lastQuickAnswer = ''
 
-// if (userName == false) {
-//   document.querySelector('#rps-user-name').textContent = userName
-// }
+if (!localStorage.getItem('userName') == false) {
+  document.querySelector('#rps-user-name').textContent = localStorage.getItem('userName')
+}
 
 rpsButtons.forEach(btn => {
   btn.addEventListener('click', () => {

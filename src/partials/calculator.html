@@ -1,31 +1,16 @@
 <section class="calculator-section">
     <div class="container">
         <h2>Калькулятор</h2>
-        <ul class="work-list">
-            <li class="list-item">
-                <div class="inputs-calculator">
-                    <input id="num1" type="text" placeholder="Введіть число 1">
-                    <input id="num2" type="text" placeholder="Введіть число 2">
-                </div>
-            </li>
-            <li class="list-item">
+        <input id="num1" type="number" placeholder="Введіть число 1">
                 <div class="operation-buttons-calculator">
-                    <button>+</button>
-                    <button>-</button>
-                    <button>*</button>
-                    <button>/</button>
+                    <button class="opp-btn" data-op="+">+</button>
+                    <button class="opp-btn" data-op="-">-</button>
+                    <button class="opp-btn" data-op="*">*</button>
+                    <button class="opp-btn" data-op="/">/</button>
                 </div>
-            </li>
-            <li class="list-item">
-                <div class="equals-button-calculator">
-                    <button>=</button>
-                </div>
-            </li>
-            <li class="list-item">
-                <div class="input-result-calculator">
-                    <input id="result" type="text" placeholder="Результат">
-                </div>
-            </li>
-        </ul>
+        <input id="num2" type="number" placeholder="Введіть число 2">
+        <button id="btn" type="submit">=</button>
+        <span id="result">Результат</span>
     </div>
 </section>
+

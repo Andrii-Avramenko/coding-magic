@@ -28,8 +28,11 @@
   transform: translate(-50%, -50%) scale(0);
 }
 
+
 .backdrop.is-hidden {
-  background-color: #0000;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
 }
 
 .no-scroll {

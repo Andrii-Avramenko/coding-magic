@@ -10,3 +10,4 @@ import './js/rock-paper-scissors';
 import './js/scientists';
 import './js/time-calculator';
 import './js/team';
+import './js/header-user';

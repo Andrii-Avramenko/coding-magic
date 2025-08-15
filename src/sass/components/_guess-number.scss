@@ -1,0 +1,71 @@
+.guess-number {
+  padding: 36px 0;
+}
+.guess-flex-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.guess-flex-row input[type='number'] {
+  flex: 1 1 0;
+  margin-bottom: 0;
+}
+
+.guess-flex-row .guess-number-result {
+  min-width: 80px;
+  text-align: right;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 500;
+}
+
+
+.guess-number-container {
+  display: flex;
+}
+.guess-number-title {
+  margin-bottom: 36px;
+  color: rgb(0, 0, 0, 1);
+  line-height: 1.25;
+  text-align: center;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: rgba(215, 215, 215, 1);
+  border-radius: 25px;
+  overflow: hidden;
+  width: 185px;
+  border: none;
+  padding: 0;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  color: rgba(126, 126, 126, 1);
+  background-color: transparent;
+  padding: 10px 15px;
+}
+
+.search-box .guess-number-button {
+  background-color: rgba(0, 0, 0, 1);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 100%;
+}
+
+.search-box button svg {
+  width: 16px;
+  height: 16px;
+  fill: white;
+}

@@ -41,7 +41,6 @@ const waitForCalculator = setInterval(() => {
                     return;
             }
             resultCalculator.value = result;
-            console.log("Результат", result)
         });
     }
 }, 200); 

@@ -1,0 +1,40 @@
+.max-number-section {
+display: flex;
+justify-content: center;
+align-items: center;
+justify-content: space-around;
+}
+.container h2{
+display: flex;
+justify-content: center;
+font-family: "Montserrat Alternates", sans-serif;
+font-weight: 400;
+font-size: 16px;
+color: #000;
+}
+.container p {
+display: flex;
+justify-content: center;
+font-family: "Montserrat Alternates", sans-serif;
+font-weight: 400;
+font-size: 12px;
+color: #000;
+}
+
+#num1, #num2, #num3{
+border-radius: 20px;
+padding: 0px 10px;
+margin-right: 10px;
+width: 135px;
+height: 35px;
+box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+background: #d7d7d7;
+font-family:  "Montserrat Alternates", sans-serif;
+font-weight: 400;
+font-size: 12px;
+color: #7e7e7e;
+}
+
+
+
+

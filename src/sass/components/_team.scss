@@ -1,3 +1,5 @@
+@use '../utils/variables' as *;
+
 .team {
       padding: 36px 0;
       text-align: center;
@@ -27,7 +29,17 @@
       padding: 10px;
       cursor: pointer;
       transform: rotate(135deg);
-      transition: opacity 0.2s;
+      transition: color 0.2s ease;
+      &:hover,
+      &:focus {
+      border: solid $darkGrayTeamBtnBgColor;
+       border-width: 0 2px 2px 0;
+    }
+    }
+      .arrow:hover,
+      .arrow:focus {
+      border: solid $darkGrayTeamBtnBgColor;
+       border-width: 0 2px 2px 0;
     }
 
     .arrow.right {

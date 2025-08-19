@@ -1,4 +1,3 @@
-import './js/header';
 import './js/born-year';
 import './js/calculator';
 import './js/dino-google';
@@ -10,4 +9,3 @@ import './js/rock-paper-scissors';
 import './js/scientists';
 import './js/time-calculator';
 import './js/team';
-import './js/header-user';

@@ -1,30 +1,30 @@
-.rps-align {
+.rps-box {
     display: flex;
+    gap: 70px;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    position: relative; 
 }
 
 .rps-game{
     display: flex;
+    gap: 30px;
     flex-direction: column;
     align-items: center;    
     text-align: center;
 }
 
 .rps-counter {
-    position: absolute;
     display: flex;
     flex-direction: column;
     top: 30%;
     right: 17%;
 }
 
-.rps-choices {
-    padding: 36px 0 0;
-}
 
+.rps-choices{
+    display: flex;
+    gap: 20px;
+}
 .rps-choice {
     padding: 10px;
     border: none;
@@ -33,16 +33,13 @@
     color: #fff;
     background-color: #000;
 
-    .rps-chosen {
+    
+}
+.rps-chosen {
     background-color: #424242;
     fill: #424242;
     }
-}
 
-.rps-resultbox {
-    max-width: 180px;
-    padding: 36px 0;
-}
 
 #rps-comp-choice {
     padding: 10px 20px;

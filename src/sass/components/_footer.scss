@@ -1,46 +1,53 @@
-.footer-section .container {
-max-width: 1200px;
-margin: 0 auto;
-height: 220px;
+@use '../utils/variables' as *;
+
+.footer-container{
 display: flex;
 justify-content: center;
 align-items: center;
-justify-content: space-around;
+justify-content: space-between;
 }
-.footer-item{
-font-family: "Montserrat Alternates", sans-serif;
-font-weight: 400;
+
+.footer-logo{
+    width: 165px;
+}
+
+.footer-link{
 font-size: 12px;
-line-height: 170%;
-color: #000;
+color: $blackColor;
+transition: color 300ns ease-in;
 }
+
+.footer-link:hover,
+.footer-link:focus{
+color: $grayToggleBtnBgColor;
+}
+
 
 .mail-input-footer{
 border-radius: 20px;
-width: 204px;
-height: 35px;
-background: #d7d7d7;
-font-family: "Montserrat Alternates", sans-serif;
-font-weight: 400;
+padding: 10px 20px;
 font-size: 12px;
-color: #7e7e7e;
+color: $grayBtnTextColor;
 outline: none;
 }
+
 .subscribe-button-footer{
 border-radius: 20px;
-padding: 10px;
-width: 107px;
-height: 35px;
-margin-left: 37px;
-background: #000;
-font-family:"Montserrat Alternates", sans-serif;
-font-weight: 400;
+padding: 10px 20px;
+margin-left: 30px;
 font-size: 12px;
-color: #fff;
+color: $whiteColor;
+background-color: $blackColor;
+transition: color 300ns ease-in;
 }
-.p-footer{
-font-family: "Montserrat Alternates", sans-serif;
-font-weight: 400;
-font-size: 6px;
-color: #000;
+
+.subscribe-button-footer:hover,
+.subscribe-button-footer:focus{
+color: $whiteColor;
+background-color: $darkGrayBgColor;
+}
+
+.subscribe-text-footer{
+margin-top: 10px;
+font-size: 12px;
 }

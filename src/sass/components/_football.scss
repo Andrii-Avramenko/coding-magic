@@ -1,3 +1,24 @@
+
+.clear-goal {
+  display: block;
+  margin: 0 auto 18px auto;
+  padding: 12px 32px;
+  background: linear-gradient(90deg, #e53935 0%, #ff7043 100%);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  letter-spacing: 1px;
+}
+.clear-goal:hover {
+  background: linear-gradient(90deg, #b71c1c 0%, #ff7043 100%);
+  box-shadow: 0 6px 20px rgba(229,57,53,0.18);
+  transform: translateY(-2px) scale(1.04);
+}
 .fotball-section {
   padding-top: 36px;
   padding-bottom: 36px;
@@ -9,6 +30,22 @@
   font-size: 16px;
   line-height: 1.25;
   text-align: center;
+}
+
+.football-goal {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.football-score {
+  font-size: 48px;
+  color: #e53935;
+  margin-bottom: 24px;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .football-field {
@@ -30,4 +67,16 @@
   z-index: 2;
   width: 50px;
   height: 50px;
+  transition: 0.5s all ease;
+  // transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1),top 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.football-goal-img {
+  position: absolute;
+  top: 65px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+  transform: rotate(90deg);
 }

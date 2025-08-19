@@ -1,0 +1,42 @@
+#tc-heading {
+    text-align: center;
+}
+
+.tc-align {
+    display: flex;
+    padding: 36px 0 0;
+    gap: 33px;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-box {
+    display: flex;
+    width: 150px;
+    height: 35px;
+    
+}
+
+#seconds-input {
+    max-width: 115px;
+    max-height: 35px;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #D7D7D7;
+    border: none;
+    box-shadow: 5px 4px 0px #b2b2b2;
+}
+
+#tc-button {
+    padding: 10px;
+    background-color: #000;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 4px 4px 0px #b2b2b2;
+}
+
+#dashed-line {
+    width: 100px;
+    border: black dashed 1px;
+}

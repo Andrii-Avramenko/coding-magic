@@ -1,7 +1,8 @@
 <section class="rock-paper-scissors">
   <div class="container">
     <h2 class="section-title">Камінь - ножиці - папір</h2>
-    <div class="rps-game">
+    <div class="rps-align">
+      <div class="rps-game">
       <div class="rps-choices">
         <button type="button" class="rps-choice" data-rpsItem="rock">
           <svg width="40" height="40" stroke="white">
@@ -19,12 +20,13 @@
           </svg>
         </button>
       </div>
-      <p>
+      <p class="rps-resultbox">
         <span id="rps-result">Оберіть варіант вище</span
         ><span id="rps-quick-answer"></span>
       </p>
       <button type="button" id="rps-comp-choice">Варіант комп’ютера</button>
-      <div class="rps-counter">
+    </div>
+    <div class="rps-counter">
         <p class="rps-item">Рахунок:</p>
         <p class="rps-item">Комп’ютер - <span id="rps-comp-count">0</span></p>
         <p class="rps-item">
@@ -32,7 +34,6 @@
           <span id="rps-user-count">0</span>
         </p>
         <button type="button" id="rps-reset">Скинути рахунок</button>
-      </div>
     </div>
   </div>
 </section>

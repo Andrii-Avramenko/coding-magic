@@ -1,11 +1,64 @@
-.rps-choice {
-    padding: 20px;
-    background-color: #000;
-    border-radius: 20px;
-    border: none
+.rps-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative; 
 }
 
-.rps-choice.rps-chosen {
+.rps-game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    text-align: center;
+}
+
+.rps-counter {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 30%;
+    right: 17%;
+}
+
+.rps-choices {
+    padding: 36px 0 0;
+}
+
+.rps-choice {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #000;
+
+    .rps-chosen {
     background-color: #424242;
     fill: #424242;
+    }
+}
+
+.rps-resultbox {
+    max-width: 180px;
+    padding: 36px 0;
+}
+
+#rps-comp-choice {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #000;
+}
+
+#rps-reset {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #000;
 }

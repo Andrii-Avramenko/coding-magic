@@ -1,0 +1,8 @@
+@use '../utils/variables' as *;
+
+.hero-title{
+    text-align: center;
+    font-size: 24px;
+    border-bottom: 2px solid $blackColor;
+    padding-bottom: 20px; 
+}

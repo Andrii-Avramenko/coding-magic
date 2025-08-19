@@ -1,21 +1,12 @@
 @use '../utils/variables' as *;
 
-
-.container h2{
-    margin-bottom: 15px;
-text-align: center;
-font-weight: 400;
-font-size: 16px;
-
-}
-
 .input-box{
     display: flex;
     gap: 30px;
     justify-content: center;
     margin-bottom: 25px;
 }
-.container p {
+.max-number-text {
 display: flex;
 justify-content: center;
 align-items: center;
